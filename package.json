@@ -1,7 +1,9 @@
 {
   "name": "bee-vue-gang",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Vue components for Haunted Bees web apps. Or you, if you really want to use them, I guess.",
+  "homepage": "https://github.com/HauntedBees/bee-vue-gang",
+  "bugs": "https://github.com/HauntedBees/bee-vue-gang/issues",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
   "scripts": {
@@ -32,6 +34,6 @@
     "vue",
     "component"
   ],
-  "author": "Sean Finch",
+  "author": "Sean Finch <fench@hauntedbees.com> (https://www.hauntedbees.com/)",
   "license": "AGPL-3.0-or-later"
 }
