@@ -1,6 +1,6 @@
 {
   "name": "bee-vue-gang",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Vue components for Haunted Bees web apps. Or you, if you really want to use them, I guess.",
   "homepage": "https://github.com/HauntedBees/bee-vue-gang",
   "bugs": "https://github.com/HauntedBees/bee-vue-gang/issues",
@@ -13,7 +13,7 @@
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
     "vue-property-decorator": "^8.4.2",
-		"vuetify": "^2.4.2"
+    "vuetify": "^2.4.2"
   },
   "devDependencies": {
     "vue": "^2.6.11",
@@ -28,7 +28,8 @@
     "rollup-plugin-vue": "^5.1.6",
     "tslib": "^2.0.0",
     "typescript": "^3.9.7",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "vuetify": "^2.4.2"
   },
   "keywords": [
     "vue",
