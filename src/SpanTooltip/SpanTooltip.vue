@@ -1,7 +1,7 @@
 <template>
     <VTooltip bottom>
         <template v-slot:activator="{ on, attrs }">
-            <span v-bind="attrs" v-on="on">
+            <span class="bee-span-tooltip" v-bind="attrs" v-on="on">
                 <slot></slot>
             </span>
         </template>

@@ -1,5 +1,5 @@
 <template>
-    <a :href="href" target="_blank" rel="external nofollow noopener noreferrer">
+    <a :href="href" target="_blank" class="bee-external-link" rel="external nofollow noopener noreferrer">
         <slot></slot>
     </a>
 </template>
