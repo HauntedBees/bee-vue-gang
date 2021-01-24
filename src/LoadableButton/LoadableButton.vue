@@ -1,6 +1,6 @@
 <template>
     <v-btn :color="color" :disabled="!valid || disabled || loading" class="mr-4 bee-loadable-button" @click="$emit('submit', me)">
-        {{$t(loading ? loadtext : text)}}
+        {{(loading ? loadtext : text)}}
         <v-progress-circular v-if="loading" style="margin-left:10px" size="16" width="2" indeterminate />
     </v-btn>
 </template>
