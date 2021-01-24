@@ -1,5 +1,5 @@
 import { Vue } from 'vue-property-decorator';
 export default class Emoji extends Vue {
-    size: number | undefined;
-    emoji?: string;
+    size: number;
+    emoji: string;
 }

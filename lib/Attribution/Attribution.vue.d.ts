@@ -5,7 +5,9 @@ export default class Attribution extends Vue {
     by: string;
     byURL: string;
     license: string;
+    licenseURL?: string;
     secondlicense?: string;
+    secondlicenseURL?: string;
     licenseName(l: string): string;
-    licenseURL(l: string): string;
+    getLicenseURL(l: string, second?: boolean): string;
 }

@@ -39,7 +39,7 @@ want to use this unless your project is also Freely licensed.
 ## SpanToolTip
 **What You Write:** `<SpanToolTip tooltip="hey">cool</SpanTooltip>`
 
-**What You Get:** Your stuff wrapped in a [Vuetify](https://vuetifyjs.com/) tooltip.
+**What You Get:** Your stuff wrapped in a [Vuetify](https://vuetifyjs.com/) [tooltip](https://vuetifyjs.com/en/components/tooltips/).
 
 **Cool Tip:** Write `Vue.component("spantt", SpanToolTip);` somewhere so you can just write `<spantt/>` instead of `<SpanToolTip/>` everywhere.
 
@@ -64,6 +64,15 @@ This one's a directive actually not a class.
 **What You Get:** The span will have the class `someClass` if `x` is true. Class will toggle as `x` updates.
 
 **Cool Tip:** Do something like `Vue.directive("classtoggle", ClassDirective);` somewhere so you can write `<span v-classtoggle>` or whatever.
+
+## Loader
+**What You Write:** `<Loader v-if="loading" />`
+
+**What You Get:** A centered [Vuetify](https://vuetifyjs.com/) [Indeterminate Circular Progress](https://vuetifyjs.com/en/components/progress-circular/#indeterminate) component that appears whenever your stuff is loading.
+
+**Full Props:**
+ - **size**: *Default value is **48**.* The size of the circle.
+ - **color**: *Default value is **primary**.* The color of the circle.
 
 ## LoadableButton
 **What You Write:** `<LoadableButton color="primary" @submit="DoSomething" />`
