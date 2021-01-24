@@ -72,11 +72,11 @@ This one's a directive actually not a class.
 
 ```tsx
 DoSomething(btn) {
-	btn.loading = true;
+    btn.loading = true;
     fetch(yourAPIPath, apiOptions).then(res => res.json().then(data => {
-    	btn.loading = false;
+        btn.loading = false;
         // your code or whatever here
-	}));
+    }));
 }
 ```
 
