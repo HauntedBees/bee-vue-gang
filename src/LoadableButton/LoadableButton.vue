@@ -1,12 +1,14 @@
 <template>
-    <v-btn :color="color" :disabled="!valid || disabled || loading" class="mr-4 bee-loadable-button" @click="$emit('submit', me)">
+    <VBtn :color="color" :disabled="!valid || disabled || loading" class="mr-4 bee-loadable-button" @click="$emit('submit', me)">
         {{(loading ? loadtext : text)}}
-        <v-progress-circular v-if="loading" style="margin-left:10px" size="16" width="2" indeterminate />
-    </v-btn>
+        <VProgressCircular v-if="loading" style="margin-left:10px" size="16" width="2" indeterminate />
+    </VBtn>
 </template>
 <script lang="ts">
+
 import { Vue, Component, Prop } from 'vue-property-decorator';
-@Component
+import { VBtn, VProgressCircular } from 'vuetify/lib';
+@Component({ components: { VBtn, VProgressCircular } })
 export default class LoadableButton extends Vue {
     loading = false;
     @Prop() disabled:boolean|undefined;

@@ -1,11 +1,12 @@
 <template>
     <div class="bee-loader text-center">
-        <v-progress-circular indeterminate :color="color" :size="size" class="mt-2" />
+        <VProgressCircular indeterminate :color="color" :size="size" class="mt-2" />
     </div>
 </template>
 <script lang="ts">
 import { Vue, Component, Prop } from 'vue-property-decorator';
-@Component
+import { VProgressCircular } from 'vuetify/lib';
+@Component({ components: { VProgressCircular } })
 export default class Loader extends Vue {
     @Prop({default:48}) size!:number;
     @Prop({default:"primary"}) color!:string;
