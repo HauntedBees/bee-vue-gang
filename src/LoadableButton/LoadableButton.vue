@@ -1,5 +1,5 @@
 <template>
-    <VBtn :color="color" :dark="dark" :disabled="!valid || disabled || loading" class="mr-4 bee-loadable-button" @click="$emit('submit', me)">
+    <VBtn :color="color" :dark="dark" :disabled="!valid || disabled || loading" :class="'bee-loadable-button ' + css" @click="$emit('submit', me)">
         {{(loading ? loadtext : text)}}
         <VProgressCircular v-if="loading" style="margin-left:10px" size="16" width="2" indeterminate />
     </VBtn>
@@ -13,6 +13,7 @@ export default class LoadableButton extends Vue {
     loading = false;
     @Prop() disabled:boolean|undefined;
     @Prop() valid:boolean|undefined;
+    @Prop({default:"mr-4"}) css!:string;
     @Prop({default:false}) dark!:boolean;
     @Prop() color:string|undefined;
     @Prop({default:"Save"}) text!:string;

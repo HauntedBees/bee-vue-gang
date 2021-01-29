@@ -95,6 +95,8 @@ The button will be disabled and show a different message and loading icon until 
  - **disabled**: Set it to true if you want to disable the button manually.
  - **valid**: Use an expression or something for this; when false, the button will be disabled.
  - **color**: Will be set as the `color` attribute of the Vuetify button.
+ - **dark**: Will be set as the `dark` attribute of the Vuetify button.
+ - **css**: Additional CSS classes to apply to the Vuetify button. Default value is `mr-4`.
  - **text**: *Default value is **Save**.* The text to display in the button when it is not loading.
  - **loadtext**: *Default value is **Saving**.* The text to display in the button when it is loading.
  - **@submit**: A function to be called when the button is clicked. The `LoadableButton` instance is passed as an argument.
