@@ -72,7 +72,9 @@ This one's a directive actually not a class.
 
 **Full Props:**
  - **size**: *Default value is **48**.* The size of the circle.
+ - **width**: *Default value is **4**.* The thickness of the circle border.
  - **color**: *Default value is **primary**.* The color of the circle.
+ - **dark**: *Default value is **fakse**.* Whether or not to use the dark theme.
 
 ## LoadableButton
 **What You Write:** `<LoadableButton color="primary" @submit="DoSomething" />`
